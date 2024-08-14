@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald%3Awght%40200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="=sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrorpolicy="no-referrer">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <title>BOOTSTRAP 5</title>
+    <style>
+        body {
+            font-family: 'oswald', 'sans-serif';
+            font-optical-sizing: auto;
+        }
+
+        .card {
+            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .card img:hover {
+            transform: scale(1.08);
+            transition: all 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(28,26,25)">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Baws</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Special Menu</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Testimonials</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Register</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="bg-infop-5" style="height:100vh">
+        <div class="container h-100">
+            <div class="row justify-content-evenly align-items-center h-100 g-3">
+                <div class="col-md-7">
+                    <div class="d-flex flex-column align-items-center mt-5">
+                        <em>
+                            <p class="h2 text-dark text-uppercase">
+                                Crispy Chicken - Finger Licking Good
+                            </p>
+                        </em>
+                        <p class="h4 text-danger text-capitalize pb-2 border-bottom border-dark">
+                            Where every flavour tells a story
+                        </p>
+                        <p class="h6 text-muted">
+                            Krishna Nagar,officers line,vellore-632001</p>
+                        <p class="h6 text-muted">
+                            +91 8220918608</p>
+                        <div>
+                            <button class="btn btn-success">Register Now</button>
+                            <button class="btn btn-warning">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img class="img-fluid rounded shadow shadow-lg border border-2 border-danger"
+                        src="images/banner.jpeg" alt="banner">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu -->
+    <section class="bg-dark p-4 mt-5">
+        <div class="container mt-5 mb-5">
+            <p class="h2 text-secondary text-center pb-3">Today's Special</p>
+            <div class="row" g-2>
+                <div class="col-md-3">
+                    <div class="card bg-light text-dark">
+                        <img src="images/food-1.jpeg" class="img-card-top" style="height:220px">
+                        <div class="cardbody">
+                            <div class="cardtitle">Fish Rice</div>
+                            <div class="cardtext">Fried rice with Fish Fry</div>
+                            <div><span class="badge bg-success mt-2">$Rs.239</span></div>
+                        </div>
+                        <div class="cardfooter text-center text-muted">39 Items Left</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-light text-dark">
+                        <img src="images/food-2.jpeg" class="img-card-top" style="height:220px">
+                        <div class="cardbody">
+                            <div class="cardtitle">Egg Fried Rice</div>
+                            <div class="cardtext">Fried rice with Boiled Egg</div>
+                            <div><span class="badge bg-success mt-2">$Rs.199</span></div>
+                        </div>
+                        <div class="cardfooter text-center text-muted">29 Items Left</div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card bg-light text-dark">
+                        <img src="images/food-3.jpeg" class="img-card-top" style="height:220px">
+                        <div class="cardbody">
+                            <div class="cardtitle">Crispy Chicken</div>
+                            <div class="cardtext">Crispy Fried Chicken</div>
+                            <div><span class="badge bg-success mt-2">$Rs.149</span></div>
+                        </div>
+                        <div class="cardfooter text-center text-muted">19 Items Left</div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card bg-light text-dark">
+                        <img src="images/food-4.jpeg" class="img-card-top" style="height:220px">
+                        <div class="cardbody">
+                            <div class="cardtitle">Pizza</div>
+                            <div class="cardtext">BBQ Chicken Pizza</div>
+                            <div><span class="badge bg-success mt-2">$Rs.399</span></div>
+                        </div>
+                        <div class="cardfooter text-center text-muted">10 Items Left</div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+    </section>
+    <!-- Testimonial -->
+    <section>
+        <div class="container mt-4">
+            <p class="h2 text-secondary text-center pb-3">Testimonial</p>
+            <div class="row mt-4 gap-4">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 shadow-lg bg-success text-light p-4 rounded">
+                    <div class="d-flex justify-content-evenly align-items-center gap-4">
+                        <img style="width: 50%;" src="testimonial/testimonial-1.jpg"
+                            class="rounded-circle border border-3 border-light">
+                        <div>
+                            <div class="h5 text-warning">Hannah</div>
+                            <p>The food at this restaurant is absolutely amazing! Every dish is bursting with flavor and
+                                is clearly made with fresh, high-quality ingredients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 shadow-lg bg-success text-light p-4 rounded">
+                    <div class="d-flex justify-content-evenly align-items-center gap-4">
+                        <img style="width: 50%;" src="testimonial/testimonial-2.png"
+                            class="rounded-circle border border-3 border-light">
+                        <div>
+                            <div class="h5 text-warning">Jeni</div>
+                            <p> From starters to desserts, each bite is a delight. Highly recommended for anyone looking
+                                for a top-notch dining experience!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5 shadow-lg bg-success text-light p-4 rounded">
+                    <div class="d-flex justify-content-evenly align-items-center gap-4">
+                        <img style="width: 50%;" src="testimonial/testimonial-3.jpg"
+                            class="rounded-circle border border-3 border-light">
+                        <div>
+                            <div class="h5 text-warning">Sophia</div>
+                            <p>I was blown away by the flavors here! Every dish was prepared with such care and
+                                attention to detail. The ambiance was perfect for a cozy night out. Can't wait to come
+                                back!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 shadow-lg bg-success text-light p-4 rounded">
+                    <div class="d-flex justify-content-evenly align-items-center gap-4">
+                        <img style="width: 50%;" src="testimonial/testimonial-4.jpeg"
+                            class="rounded-circle border border-3 border-light">
+                        <div>
+                            <div class="h5 text-warning">Emily</div>
+                            <p> An unforgettable dining experience! The food was both authentic and innovative, with
+                                each dish surpassing my expectations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Register -->
+    <section class="bg-dark">
+        <div class="container py-5">
+            <p class="h2 text-secondary text-center">Register Here</p>
+            <div
+                class="row justify-content-center align-items-center bg-light text-dark border border-4 border-secondary p-5 mt-5 rounded">
+                <div class="col-md-8">
+                    <form>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Gender</label>
+                            <select class="form-select">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Address</label>
+                            <textarea class="form-control" type="text"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Are You Above 18</label>
+                            <div>
+                                <input type="radio" name="age" class="form-check-input">
+                                <label for="form-ckeck-label">Yes</label>
+                                <input type="radio" name="age" class="form-check-input">
+                                <label for="form-ckeck-label">No</label>
+                            </div>
+                            <div class="mb-3">
+                                <button class="btn btn-danger" style="width: 100%;">Register</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <section class="p-4">
+            <div class="container text-center-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto md-4">
+                        <h6 class="text-uppercase fw-bold">BAWS</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur recusandae at hic error
+                            similique aut vel earum obcaecati, id sequi.</p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto md-4">
+                        <h6 class="text-uppercase fw-bold">Useful Links</h6>
+                        <p>
+                            <a href="" class="text-dark">Your Account</a>
+                        </p>
+                        <p>
+                            <a href="" class="text-dark">Foreget Password</a>
+                        </p>
+                        <p>
+                            <a href="" class="text-dark">Angular</a>
+                        </p>
+                        <p>
+                            <a href="" class="text-dark">Brand</a>
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto md-4">
+                        <h6 class="text-uppercase fw-bold">Products</h6>
+                        <p>
+                            <a href="" class="text-dark">Brand</a>
+                        </p>
+                        <p>
+                            <a href="" class="text-dark">Brandflow</a>
+                        </p>
+                        <p>
+                            <a href="" class="text-dark">Angular</a>
+                        </p>
+                        <p>
+                            <a href="" class="text-dark">Brand</a>
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto md-4">
+                        <h6 class="text-uppercase fw-bold">Useful Links</h6>
+                        <p>
+                            <a href="" class="text-dark">Your Account</a>
+                        </p>
+                        <p>
+                            <a href="" class="text-dark">Foreget Password</a>
+                        </p>
+                        <p>
+                            <a href="" class="text-dark">Angular</a>
+                        </p>
+                        <p>
+                            <a href="" class="text-dark">Brand</a>
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto md-4">
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <p><i class="fas fa-home mr-3"></i>Vellore(TN), India </p>
+                        <p><i class="fas fa-envelope mr-3"></i>balabrucks@gmail.com</p>
+                        <p><i class="fas fa-phone mr-3"></i>+91 8220918608</p>
+                        <p><i class="fas fa-print mr-3"></i>+0416 222564</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-3" style="background-color: rgba(0,0,0,0.2);">BALABRUCKS©2024</div>
+    </footer>
+</body>
+
+</html>
